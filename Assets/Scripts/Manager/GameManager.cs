@@ -224,6 +224,9 @@ public class GameManager : MonoBehaviour
     
     internal void Revive()
     {
+        GamePlayManager.instance.DecreaseDifficulty();
+        GamePlayManager.instance.DecreaseDifficulty();
+        GamePlayManager.instance.DecreaseDifficulty();
         GamePlayManager.instance.combo = 0;
         ViewManager.instance.ChangeComboText(GamePlayManager.instance.combo);
         reviveRequested = false;

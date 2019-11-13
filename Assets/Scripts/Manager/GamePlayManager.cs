@@ -60,9 +60,10 @@ public class GamePlayManager : MonoBehaviour
     internal void StartPlaying()
     {
         player.SetActive(true);
-        
+
+        SetDifficulty();
         combo = 0;
-        ChangeElectracityParticleBurst(1);
+        //ChangeElectracityParticleBurst(1);
         timer = 0;
         sqCounter = 0;
         paused = false;
@@ -127,8 +128,10 @@ public class GamePlayManager : MonoBehaviour
                     DeletePSqStack();
                     CreatePSqStack();
 
+                    DecreaseDifficulty();
+
                     combo = 0;
-                    ChangeElectracityParticleBurst(5);
+                    //ChangeElectracityParticleBurst(5);
                     ViewManager.instance.ChangeComboText(combo);
                 }
                 PopSq(sq);
@@ -271,6 +274,7 @@ public class GamePlayManager : MonoBehaviour
 
     internal void PointCollected(SqHandler sq)
     {
+        IncreaseDifficulty();
         sparkParticle.transform.position = (sq.transform.position + player.transform.position) / 2;
         sparkParticle.Play(true);
         
@@ -287,10 +291,10 @@ public class GamePlayManager : MonoBehaviour
         StatHandler.instance.SetStat("MAX COMBO", combo, true);
 
 
-        ChangeElectracityParticleBurst(5, true);
+        //ChangeElectracityParticleBurst(5, true);
     }
 
-    private void ChangeElectracityParticleBurst(short count, bool isCumulative = false)
+    /*private void ChangeElectracityParticleBurst(short count, bool isCumulative = false)
     {
         var tempBurst = shortCircuit.emission.GetBurst(0);
 
@@ -303,5 +307,34 @@ public class GamePlayManager : MonoBehaviour
             tempBurst.count = count;
 
         shortCircuit.emission.SetBurst(0, tempBurst);
+    }*/
+    
+
+    private void SetDifficulty(float sqGenRateD = 1, float sqSpeedD = 5, float playerSpeedD = 7)
+    {
+        sqGenRate = sqGenRateD;
+        sqSpeed = sqSpeedD;
+        playerSpeed = playerSpeedD;
+    }
+
+    private void IncreaseDifficulty()
+    {
+        sqGenRate *= 0.98f;
+        sqSpeed *= 1.02f;
+        playerSpeed *= 1.02f;
+
+        if (sqGenRate <= 0.5) sqGenRate = 0.5f;
+        if (sqSpeed >= 10) sqSpeed = 10;
+        if (playerSpeed >= 14) playerSpeed = 14;
+    }
+    internal void DecreaseDifficulty()
+    {
+        sqGenRate *= 1.02f;
+        sqSpeed *= 0.98f;
+        playerSpeed *= 0.98f;
+
+        if (sqGenRate >= 1) sqGenRate = 1;
+        if (sqSpeed <= 5) sqSpeed = 5;
+        if (playerSpeed <= 7) playerSpeed = 7;
     }
 }

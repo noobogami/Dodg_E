@@ -654,7 +654,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &125674419
 Transform:
   m_ObjectHideFlags: 0
@@ -1485,7 +1485,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304993987}
   serializedVersion: 6
-  lengthInSec: 0.5
+  lengthInSec: 0.7
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -1499,8 +1499,8 @@ ParticleSystem:
   useRigidbodyForVelocity: 1
   startDelay:
     serializedVersion: 2
-    minMaxState: 3
-    scalar: 0.1
+    minMaxState: 0
+    scalar: 0
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -1560,8 +1560,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.1
-      minScalar: 0.05
+      scalar: 0.4
+      minScalar: 0.1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1667,7 +1667,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0, b: 0, a: 1}
+      maxColor: {r: 0.740566, g: 0.99486625, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -1729,8 +1729,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.05
-      minScalar: 0.01
+      scalar: 0.02
+      minScalar: 0.005
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -2187,11 +2187,11 @@ ParticleSystem:
     m_TextureColorAffectsParticles: 1
     m_TextureAlphaAffectsParticles: 1
     m_TextureBilinearFiltering: 0
-    randomDirectionAmount: 0.05
+    randomDirectionAmount: 0
     sphericalDirectionAmount: 0
-    randomPositionAmount: 20
+    randomPositionAmount: 0
     radius:
-      value: 1
+      value: 15
       mode: 0
       spread: 0
       speed:
@@ -2420,7 +2420,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 20
+        scalar: 10
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -7622,7 +7622,7 @@ PrefabInstance:
     - target: {fileID: 2896084864976288912, guid: a8265ff3a54fe440d861479a62c690d9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2896084864976288912, guid: a8265ff3a54fe440d861479a62c690d9,
         type: 3}
@@ -7711,11 +7711,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1837999465, guid: a8265ff3a54fe440d861479a62c690d9, type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.8818623
+      value: 0.9366287
       objectReference: {fileID: 0}
     - target: {fileID: 1837999465, guid: a8265ff3a54fe440d861479a62c690d9, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.45882356
+      value: 0.6179246
       objectReference: {fileID: 0}
     - target: {fileID: 1837999465, guid: a8265ff3a54fe440d861479a62c690d9, type: 3}
       propertyPath: TrailModule.colorOverLifetime.maxColor.r
@@ -15237,10 +15237,10 @@ MonoBehaviour:
   pSq: {fileID: 6413410047463082182, guid: 0d202a733cc2c4120a53d248f25d0f8c, type: 3}
   sqParent: {fileID: 815060571}
   pSqParent: {fileID: 1222981056}
-  sqGenRate: 0.7
-  sqSpeed: 7
-  playerSpeed: 10
-  pointGenRate: 4
+  sqGenRate: 0.5
+  sqSpeed: 10
+  playerSpeed: 13
+  pointGenRate: 3
   stackSize: 20
 --- !u!114 &1698979539
 MonoBehaviour:
@@ -16154,7 +16154,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 5279ccf96358f4211882b6f6398cf28a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16262,7 +16262,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1886056034
 Animator:
   serializedVersion: 3
