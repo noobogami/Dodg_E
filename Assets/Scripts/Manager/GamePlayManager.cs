@@ -285,7 +285,7 @@ public class GamePlayManager : MonoBehaviour
         {
             CreatePSqStack();
         }
-        //CreatePlayerSq();
+        CreatePlayerSq();
         combo++;
         ViewManager.instance.ChangeComboText(combo);
         StatHandler.instance.SetStat("MAX COMBO", combo, true);
@@ -325,7 +325,8 @@ public class GamePlayManager : MonoBehaviour
 
         if (sqGenRate <= 0.5) sqGenRate = 0.5f;
         if (sqSpeed >= 10) sqSpeed = 10;
-        if (playerSpeed >= 14) playerSpeed = 14;
+        if (playerSpeed >= 14 && playerSpeed > 0) playerSpeed = 14;
+        if (playerSpeed <= -14 && playerSpeed < 0) playerSpeed = -14;
     }
     internal void DecreaseDifficulty()
     {
@@ -335,6 +336,7 @@ public class GamePlayManager : MonoBehaviour
 
         if (sqGenRate >= 1) sqGenRate = 1;
         if (sqSpeed <= 5) sqSpeed = 5;
-        if (playerSpeed <= 7) playerSpeed = 7;
+        if (playerSpeed <= 7 && playerSpeed > 0) playerSpeed = 7;
+        if (playerSpeed >= -7 && playerSpeed < 0) playerSpeed = -7;
     }
 }
