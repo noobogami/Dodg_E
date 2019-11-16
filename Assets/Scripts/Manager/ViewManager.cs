@@ -183,4 +183,107 @@ public class ViewManager : MonoBehaviour
         combo.gameObject.SetActive(false);
     }
 
+
+    [Header("Fire")] 
+    public ParticleSystem psFireSpark;
+    public ParticleSystem psFireGlow;
+
+    internal void IncreaseFireIntensity()
+    {
+        var emission = psFireGlow.emission;
+        emission.rateOverTime = emission.rateOverTime.constant + 0.02f;
+
+        if (emission.rateOverTime.constant > 1)
+            emission.rateOverTime = 1;
+
+        var main = psFireSpark.main;
+
+        
+
+        var m_life = main.startLifetime;
+        m_life.constantMin += 0.06f;
+        m_life.constantMax += 0.06f;
+
+        if (m_life.constantMin > 3)
+        {
+            m_life.constantMin = 3;
+            m_life.constantMax = 5;
+        }
+
+        main.startLifetime = m_life;
+        
+        var m_speed = main.startSpeed;
+        m_speed.constantMin += 0.12f;
+        m_speed.constantMax += 0.3f;
+
+        if (m_speed.constantMin > 5)
+        {
+            m_speed.constantMin = 5;
+            m_speed.constantMax = 10;
+        }
+
+        main.startSpeed = m_speed;
+        
+        
+        var m_size = main.startSize;
+        m_size.constantMin += 0.006f;
+        m_size.constantMax += 0.009f;
+        
+        if (m_speed.constantMin > 0.2)
+        {
+            m_speed.constantMin = 0.2f;
+            m_speed.constantMax = 0.5f;
+        }
+        
+        main.startSize = m_size;
+    }
+
+
+    internal void DecreaseFireIntensity(bool reset = false)
+    {
+        var emission = psFireGlow.emission;
+        emission.rateOverTime = emission.rateOverTime.constant - 0.02f;
+        
+        if (emission.rateOverTime.constant < 0.3f)
+            emission.rateOverTime = 0.3f;
+        
+        var main = psFireSpark.main;
+        
+        var m_life = main.startLifetime;
+        m_life.constantMin -= 0.06f;
+        m_life.constantMax -= 0.06f;
+
+        if (reset || m_life.constantMax < 3)
+        {
+            m_life.constantMin = 1;
+            m_life.constantMax = 3;
+        }
+
+        main.startLifetime = m_life;
+        
+        var m_speed = main.startSpeed;
+        m_speed.constantMin += 0.12f;
+        m_speed.constantMax += 0.3f;
+
+        if (reset || m_speed.constantMax < 5)
+        {
+            m_speed.constantMin = 1;
+            m_speed.constantMax = 5;
+        }
+
+        main.startSpeed = m_speed;
+        
+        
+        var m_size = main.startSize;
+        m_size.constantMin += 0.006f;
+        m_size.constantMax += 0.009f;
+        
+        if (reset || m_size.constantMax < 0.2)
+        {
+            m_size.constantMin = 0f;
+            m_size.constantMax = 0.2f;
+        }
+        
+        main.startSize = m_size;
+    }
 }

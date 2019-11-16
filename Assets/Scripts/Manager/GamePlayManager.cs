@@ -61,7 +61,7 @@ public class GamePlayManager : MonoBehaviour
     {
         player.SetActive(true);
 
-        SetDifficulty();
+        ResetDifficulty();
         combo = 0;
         //ChangeElectracityParticleBurst(1);
         timer = 0;
@@ -287,6 +287,13 @@ public class GamePlayManager : MonoBehaviour
         }
         CreatePlayerSq();
         combo++;
+        if (combo+1 >= (currentCombo + 1) * 10 && currentCombo < comboParent.transform.childCount-1)
+        {
+            currentCombo++;
+            SetComboImage();
+            DeletePSqStack();
+            CreatePSqStack();
+        }
         ViewManager.instance.ChangeComboText(combo);
         StatHandler.instance.SetStat("MAX COMBO", combo, true);
 
@@ -310,33 +317,52 @@ public class GamePlayManager : MonoBehaviour
     }*/
     
 
-    private void SetDifficulty(float sqGenRateD = 1, float sqSpeedD = 5, float playerSpeedD = 7)
-    {
-        sqGenRate = sqGenRateD;
-        sqSpeed = sqSpeedD;
-        playerSpeed = playerSpeedD;
-    }
-
     private void IncreaseDifficulty()
     {
-        sqGenRate *= 0.98f;
-        sqSpeed *= 1.02f;
-        playerSpeed *= 1.02f;
+        ViewManager.instance.IncreaseFireIntensity();
+        
+        sqGenRate -= 0.015f;
+        sqSpeed += 0.13f;
+        playerSpeed += 0.2f * (playerSpeed < 0 ? -1 : 1);
 
         if (sqGenRate <= 0.5) sqGenRate = 0.5f;
         if (sqSpeed >= 10) sqSpeed = 10;
         if (playerSpeed >= 14 && playerSpeed > 0) playerSpeed = 14;
         if (playerSpeed <= -14 && playerSpeed < 0) playerSpeed = -14;
     }
-    internal void DecreaseDifficulty()
+    internal void DecreaseDifficulty(bool reset = false)
     {
-        sqGenRate *= 1.02f;
-        sqSpeed *= 0.98f;
-        playerSpeed *= 0.98f;
+        ViewManager.instance.DecreaseFireIntensity(reset);
+        
+        sqGenRate += 0.015f;
+        sqSpeed -= 0.13f;
+        playerSpeed -= 0.2f * (playerSpeed < 0 ? -1 : 1);
 
-        if (sqGenRate >= 1) sqGenRate = 1;
-        if (sqSpeed <= 5) sqSpeed = 5;
-        if (playerSpeed <= 7 && playerSpeed > 0) playerSpeed = 7;
-        if (playerSpeed >= -7 && playerSpeed < 0) playerSpeed = -7;
+        if (reset || sqGenRate >= 1) sqGenRate = 1;
+        if (reset || sqSpeed <= 5) sqSpeed = 5;
+        if (reset || (playerSpeed <= 7 && playerSpeed > 0)) playerSpeed = 7;
+        if (reset || (playerSpeed >= -7 && playerSpeed < 0)) playerSpeed = -7;
+    }
+
+    private void ResetDifficulty()
+    {
+        DecreaseDifficulty(true);
+        currentCombo = 0;
+        SetComboImage();
+    }
+
+
+
+    [Header("Player Combo")] public GameObject comboParent;
+    private int currentCombo = 0;
+
+    private void SetComboImage()
+    {
+        for (int i = 0; i < comboParent.transform.childCount; i++)
+        {
+            comboParent.transform.GetChild(i).gameObject.SetActive(false);
+        }
+        
+        comboParent.transform.GetChild(currentCombo).gameObject.SetActive(true);
     }
 }
