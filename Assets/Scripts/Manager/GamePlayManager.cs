@@ -128,11 +128,10 @@ public class GamePlayManager : MonoBehaviour
                     DeletePSqStack();
                     CreatePSqStack();
 
-                    DecreaseDifficulty();
+                    //DecreaseDifficulty();
 
-                    combo = 0;
+                    ResetCombo();                    
                     //ChangeElectracityParticleBurst(5);
-                    ViewManager.instance.ChangeComboText(combo);
                 }
                 PopSq(sq);
                 i--;
@@ -274,7 +273,7 @@ public class GamePlayManager : MonoBehaviour
 
     internal void PointCollected(SqHandler sq)
     {
-        IncreaseDifficulty();
+        SetDifficulty(GameManager.instance.score);
         sparkParticle.transform.position = (sq.transform.position + player.transform.position) / 2;
         sparkParticle.Play(true);
         
@@ -289,7 +288,7 @@ public class GamePlayManager : MonoBehaviour
         combo++;
         if (combo+1 >= (currentCombo + 1) * 10 && currentCombo < comboParent.transform.childCount-1)
         {
-            currentCombo++;
+            IncreaseCombo();
             SetComboImage();
             DeletePSqStack();
             CreatePSqStack();
@@ -299,6 +298,19 @@ public class GamePlayManager : MonoBehaviour
 
 
         //ChangeElectracityParticleBurst(5, true);
+    }
+
+    private void IncreaseCombo()
+    {
+        combo++;
+        ViewManager.instance.SetFireIntensity(combo, 40);    
+    }
+
+    private void ResetCombo()
+    {
+        combo = 0;
+        ViewManager.instance.SetFireIntensity(combo, 40);
+        ViewManager.instance.ChangeComboText(combo);
     }
 
     /*private void ChangeElectracityParticleBurst(short count, bool isCumulative = false)
@@ -315,22 +327,24 @@ public class GamePlayManager : MonoBehaviour
 
         shortCircuit.emission.SetBurst(0, tempBurst);
     }*/
+
+    private float sqSpeed_start = 5, sqSpeed_end = 10;
+    private float sqGenRate_start = 1, sqGenRate_end = 0.5f;
+    private float playerSpeed_start = 7, playerSpeed_end = 14;
+
+
+    private int maxDiffPoint = 1000;
+    private void SetDifficulty(int point)
+    {
+        float p = Mathf.Clamp(point * 1.0f / maxDiffPoint, 0, 1);
+        
+        sqSpeed = ((sqSpeed_end - sqSpeed_start) * p) + sqSpeed_start;
+        sqGenRate = ((sqGenRate_end - sqGenRate_start) * p) + sqGenRate_start;
+        playerSpeed = (((playerSpeed_end - playerSpeed_start) * p) + playerSpeed_start) * (playerSpeed < 0 ? -1 : 1);
+    }
     
 
-    private void IncreaseDifficulty()
-    {
-        ViewManager.instance.IncreaseFireIntensity();
-        
-        sqGenRate -= 0.015f;
-        sqSpeed += 0.13f;
-        playerSpeed += 0.2f * (playerSpeed < 0 ? -1 : 1);
-
-        if (sqGenRate <= 0.5) sqGenRate = 0.5f;
-        if (sqSpeed >= 10) sqSpeed = 10;
-        if (playerSpeed >= 14 && playerSpeed > 0) playerSpeed = 14;
-        if (playerSpeed <= -14 && playerSpeed < 0) playerSpeed = -14;
-    }
-    internal void DecreaseDifficulty(bool reset = false)
+    /*internal void DecreaseDifficulty(bool reset = false)
     {
         ViewManager.instance.DecreaseFireIntensity(reset);
         
@@ -342,11 +356,12 @@ public class GamePlayManager : MonoBehaviour
         if (reset || sqSpeed <= 5) sqSpeed = 5;
         if (reset || (playerSpeed <= 7 && playerSpeed > 0)) playerSpeed = 7;
         if (reset || (playerSpeed >= -7 && playerSpeed < 0)) playerSpeed = -7;
-    }
+    }*/
 
     private void ResetDifficulty()
     {
-        DecreaseDifficulty(true);
+        //DecreaseDifficulty(true);
+        SetDifficulty(0);
         currentCombo = 0;
         SetComboImage();
     }

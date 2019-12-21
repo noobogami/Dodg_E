@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Net.NetworkInformation;
 using GameAnalyticsSDK;
@@ -68,6 +69,7 @@ public class GameManager : MonoBehaviour
         isPlaying = false;
         //targetFrameRate = 40;
         PopupHandler.instance.HideMessage();
+        TutorialManager.instance.ResetPanels();
 
         GetPlayerPrefs();
         StatHandler.instance.SetStat("BEST SCORE", bestScore,false);
@@ -113,6 +115,11 @@ public class GameManager : MonoBehaviour
 
     public void PlayGame()
     {
+        if (!PlayerPrefs.HasKey("TutorialPlayed"))
+        {
+            ShowTutorial();
+            return;
+        }
         score = 0;
         isPlaying = true;
         canRevive = true;
@@ -224,9 +231,10 @@ public class GameManager : MonoBehaviour
     
     internal void Revive()
     {
-        GamePlayManager.instance.DecreaseDifficulty();
-        GamePlayManager.instance.DecreaseDifficulty();
-        GamePlayManager.instance.DecreaseDifficulty();
+        //GamePlayManager.instance.DecreaseDifficulty();
+        //GamePlayManager.instance.DecreaseDifficulty();
+        //GamePlayManager.instance.DecreaseDifficulty();
+        
         GamePlayManager.instance.combo = 0;
         ViewManager.instance.ChangeComboText(GamePlayManager.instance.combo);
         reviveRequested = false;
@@ -251,5 +259,18 @@ public class GameManager : MonoBehaviour
         purchased = true;
         UpdatePlayerPrefs();
         ViewManager.instance.HidePurchaseBtn();
+    }
+
+    public void ShowTutorial()
+    {
+        TutorialManager.instance.StartTutorial();
+    }
+
+    public void EndTutorial()
+    {
+        PlayerPrefs.SetInt("TutorialPlayed", 1);
+        PlayerPrefs.Save();
+        print("Here");
+        PlayGame();
     }
 }

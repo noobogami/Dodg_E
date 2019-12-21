@@ -188,79 +188,43 @@ public class ViewManager : MonoBehaviour
     public ParticleSystem psFireSpark;
     public ParticleSystem psFireGlow;
 
-    internal void IncreaseFireIntensity()
+    private float emission_start= 0.3f, emission_end = 1;
+    private float m_life_min_start = 1, m_life_min_end = 3, m_life_max_start = 3, m_life_max_end = 5;
+    private float m_speed_min_start = 1, m_speed_min_end = 5, m_speed_max_start = 5, m_speed_max_end = 10;
+    private float m_size_min_start = 0, m_size_min_end = 0.2f, m_size_max_start = 0.2f, m_size_max_end = 0.5f;
+    
+    internal void SetFireIntensity(int combo, int max)
     {
+        float p = Mathf.Clamp(combo * 1.0f / max, 0, 1); 
+        
         var emission = psFireGlow.emission;
-        emission.rateOverTime = emission.rateOverTime.constant + 0.02f;
-
-        if (emission.rateOverTime.constant > 1)
-            emission.rateOverTime = 1;
+        emission.rateOverTime = p * (emission_end - emission_start) + emission_start;
 
         var main = psFireSpark.main;
-
-        
-
         var m_life = main.startLifetime;
-        m_life.constantMin += 0.06f;
-        m_life.constantMax += 0.06f;
-
-        if (m_life.constantMin > 3)
-        {
-            m_life.constantMin = 3;
-            m_life.constantMax = 5;
-        }
+        
+        m_life.constantMin = p * (m_life_min_end - m_life_min_start) + m_life_min_start;
+        m_life.constantMax = p * (m_life_max_end - m_life_max_start) + m_life_max_start;
 
         main.startLifetime = m_life;
         
         var m_speed = main.startSpeed;
-        m_speed.constantMin += 0.12f;
-        m_speed.constantMax += 0.3f;
-
-        if (m_speed.constantMin > 5)
-        {
-            m_speed.constantMin = 5;
-            m_speed.constantMax = 10;
-        }
+        m_speed.constantMin = p * (m_speed_min_end - m_speed_min_start) + m_speed_min_start;
+        m_speed.constantMax = p * (m_speed_max_end - m_speed_max_start) + m_speed_max_start;
 
         main.startSpeed = m_speed;
         
         
         var m_size = main.startSize;
-        m_size.constantMin += 0.006f;
-        m_size.constantMax += 0.009f;
-        
-        if (m_speed.constantMin > 0.2)
-        {
-            m_speed.constantMin = 0.2f;
-            m_speed.constantMax = 0.5f;
-        }
+        m_size.constantMin = p * (m_size_min_end - m_size_min_start) + m_size_min_start;
+        m_size.constantMax = p * (m_size_max_end - m_size_max_start) + m_size_max_start;
         
         main.startSize = m_size;
     }
 
 
-    internal void DecreaseFireIntensity(bool reset = false)
+    /*internal void DecreaseFireIntensity(bool reset = false)
     {
-        var emission = psFireGlow.emission;
-        emission.rateOverTime = emission.rateOverTime.constant - 0.02f;
-        
-        if (emission.rateOverTime.constant < 0.3f)
-            emission.rateOverTime = 0.3f;
-        
-        var main = psFireSpark.main;
-        
-        var m_life = main.startLifetime;
-        m_life.constantMin -= 0.06f;
-        m_life.constantMax -= 0.06f;
-
-        if (reset || m_life.constantMax < 3)
-        {
-            m_life.constantMin = 1;
-            m_life.constantMax = 3;
-        }
-
-        main.startLifetime = m_life;
-        
         var m_speed = main.startSpeed;
         m_speed.constantMin += 0.12f;
         m_speed.constantMax += 0.3f;
@@ -285,5 +249,5 @@ public class ViewManager : MonoBehaviour
         }
         
         main.startSize = m_size;
-    }
+    }*/
 }
