@@ -70,6 +70,7 @@ public class GameManager : MonoBehaviour
         //targetFrameRate = 40;
         PopupHandler.instance.HideMessage();
         TutorialManager.instance.ResetPanels();
+        AudioManager.instance.StartMusic();
 
         GetPlayerPrefs();
         StatHandler.instance.SetStat("BEST SCORE", bestScore,false);

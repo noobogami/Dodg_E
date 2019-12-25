@@ -52,13 +52,12 @@ public class TutorialManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        instance = this;
         _tutState = 0;
     }
 
     // Update is called once per frame
-    void Update()
+    void Awake()
     {
-        
+        instance = this;
     }
 }

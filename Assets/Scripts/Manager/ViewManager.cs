@@ -222,6 +222,15 @@ public class ViewManager : MonoBehaviour
         main.startSize = m_size;
     }
 
+    public GameObject aboutUsPanel;
+    public void ShowAboutUs()
+    {
+        aboutUsPanel.SetActive(true);
+    }
+    public void HideAboutUs()
+    {
+        aboutUsPanel.SetActive(false);
+    }
 
     /*internal void DecreaseFireIntensity(bool reset = false)
     {

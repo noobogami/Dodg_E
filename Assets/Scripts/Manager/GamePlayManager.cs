@@ -285,10 +285,10 @@ public class GamePlayManager : MonoBehaviour
             CreatePSqStack();
         }
         CreatePlayerSq();
-        combo++;
+        IncreaseCombo();
         if (combo+1 >= (currentCombo + 1) * 10 && currentCombo < comboParent.transform.childCount-1)
         {
-            IncreaseCombo();
+            currentCombo++;
             SetComboImage();
             DeletePSqStack();
             CreatePSqStack();
@@ -303,13 +303,13 @@ public class GamePlayManager : MonoBehaviour
     private void IncreaseCombo()
     {
         combo++;
-        ViewManager.instance.SetFireIntensity(combo, 40);    
+        ViewManager.instance.SetFireIntensity(combo, (currentCombo + 1) * 10);    
     }
 
     private void ResetCombo()
     {
         combo = 0;
-        ViewManager.instance.SetFireIntensity(combo, 40);
+        ViewManager.instance.SetFireIntensity(combo, (currentCombo + 1) * 10);
         ViewManager.instance.ChangeComboText(combo);
     }
 
