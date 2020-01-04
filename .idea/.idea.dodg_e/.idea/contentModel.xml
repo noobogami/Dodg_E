@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Qolenj-G\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Qolenj-G\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_dodg_e.1098405814.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Qolenj-G\Documents\dodg_e" t="IncludeRecursive">
+    <e p="C:\Users\Qolenj\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Qolenj\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_dodg_e.-169185980.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Qolenj\Desktop\Projects\dodg_e" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -46,7 +46,9 @@
               </e>
               <e p="GAInitialize.cs" t="Include" />
               <e p="GetCommandCenterValueAsString.cs" t="Include" />
+              <e p="GetRemoteConfigsValueAsString.cs" t="Include" />
               <e p="IsCommandCenterReady.cs" t="Include" />
+              <e p="IsRemoteConfigsReady.cs" t="Include" />
               <e p="SendBusinessEvent.cs" t="Include" />
               <e p="SendDesignEvent.cs" t="Include" />
               <e p="SendErrorEvent.cs" t="Include" />
@@ -60,6 +62,7 @@
             <e p="Scripts" t="Include">
               <e p="Enums.cs" t="Include" />
               <e p="Events" t="Include">
+                <e p="GA_Ads.cs" t="Include" />
                 <e p="GA_Business.cs" t="Include" />
                 <e p="GA_Debug.cs" t="Include" />
                 <e p="GA_Design.cs" t="Include" />
@@ -86,6 +89,7 @@
                 <e p="GA_MonoWrapper.cs" t="Include" />
                 <e p="GA_TizenWrapper.cs" t="Include" />
                 <e p="GA_tvOSWrapper.cs" t="Include" />
+                <e p="GA_UWPWrapper.cs" t="Include" />
                 <e p="GA_WebGLWrapper.cs" t="Include" />
                 <e p="GA_Wrapper.cs" t="Include" />
               </e>
@@ -139,12 +143,9 @@
       </e>
       <e p="dodg_e.sln" t="IncludeFlat" />
       <e p="Elringus.SpriteGlow.Runtime.csproj" t="IncludeRecursive" />
-      <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
-      <e p="Temp" t="ExcludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-      </e>
+      <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
   </component>
 </project>

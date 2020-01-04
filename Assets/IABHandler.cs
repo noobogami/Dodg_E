@@ -27,16 +27,19 @@ public class IABHandler : MonoBehaviour
 
     public void RemoveAdRequest()
     {
+        print("Remove Ad Requested");
         BazaarIAB.purchaseProduct("Remove_Ad");
     }
 
     private void PurchaseSucceeded(BazaarPurchase result)
     {
+        print("Remove Ad Purchased");
         BazaarIAB.consumeProduct(result.ProductId);
     }
 
     private void ConsumeSucceeded(BazaarPurchase result)
     {
+        print("Remove Ad Consumed");
         GameManager.instance.RemoveAd();
     }
 

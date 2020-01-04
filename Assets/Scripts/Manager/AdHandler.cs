@@ -12,6 +12,7 @@ public class AdHandler : MonoBehaviour
 
     private string ad_Zone_Revive = "5da1ce3017ec1e00013a1283";
     private string ad_Zone_Interstitial = "5da1ce3017ec1e00013a1284";
+    private string bannerZoneId = "5da1ce3017ec1e00013a1285";
 
 
     private void Awake()
@@ -26,7 +27,32 @@ public class AdHandler : MonoBehaviour
         Tapsell.SetRewardListener(AdReward);
     }
 
+    internal void ShowBannerAd()
+    {
+        Tapsell.RequestBannerAd (bannerZoneId,BannerType.BANNER_320x50, Gravity.TOP, Gravity.CENTER,
+            (string zoneId)=>{
+                Debug.Log("Action: onBannerRequestFilledAction");
+                Tapsell.ShowBannerAd(zoneId);
+            },
+            (string zoneId)=>{
+                Debug.Log("Action: onNoBannerAdAvailableAction");
+            },
+            (TapsellError tapsellError)=>{
+                Debug.Log("Action: onBannerAdErrorAction");
+            },
+            (string zoneId)=>{
+                Debug.Log("Action: onNoNetworkAction");
+            }, 
+            (string zoneId)=>{
+                Debug.Log("Action: onHideBannerAction");
+            });
+    }
 
+    internal void HideBannerAd()
+    {
+        Tapsell.HideBannerAd(bannerZoneId);
+    }
+    
     public void RequestCoinAd()
     {
         /*if (!PlayerPrefs.HasKey("lastAdWatched"))

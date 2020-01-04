@@ -369,7 +369,7 @@ public class GamePlayManager : MonoBehaviour
 
 
     [Header("Player Combo")] public GameObject comboParent;
-    private int currentCombo = 0;
+    internal int currentCombo = 0;
 
     private void SetComboImage()
     {

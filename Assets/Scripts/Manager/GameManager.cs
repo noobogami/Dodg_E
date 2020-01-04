@@ -76,8 +76,16 @@ public class GameManager : MonoBehaviour
         StatHandler.instance.SetStat("BEST SCORE", bestScore,false);
         StatHandler.instance.SetStat("TOTAL SCORE", totalScore,false);
 
-        if (purchased)    ViewManager.instance.HidePurchaseBtn();
-        else     ViewManager.instance.ShowPurchaseBtn();
+        if (purchased)
+        {
+            ViewManager.instance.HidePurchaseBtn();
+            AdHandler.instance.HideBannerAd();
+        }
+        else
+        {
+            ViewManager.instance.ShowPurchaseBtn();
+            AdHandler.instance.ShowBannerAd();
+        }
         
     }
 
@@ -227,6 +235,11 @@ public class GameManager : MonoBehaviour
     public void RequestRevive()
     {
         reviveRequested = true;
+        if (purchased)
+        {
+            Revive();
+            return;
+        }
         AdHandler.instance.ShowReviveAd();
     }
     
@@ -237,6 +250,7 @@ public class GameManager : MonoBehaviour
         //GamePlayManager.instance.DecreaseDifficulty();
         
         GamePlayManager.instance.combo = 0;
+        ViewManager.instance.SetFireIntensity(GamePlayManager.instance.combo, (GamePlayManager.instance.currentCombo + 1) * 10);
         ViewManager.instance.ChangeComboText(GamePlayManager.instance.combo);
         reviveRequested = false;
         PopupHandler.instance.HideMessage();
@@ -260,6 +274,7 @@ public class GameManager : MonoBehaviour
         purchased = true;
         UpdatePlayerPrefs();
         ViewManager.instance.HidePurchaseBtn();
+        AdHandler.instance.HideBannerAd();
     }
 
     public void ShowTutorial()
