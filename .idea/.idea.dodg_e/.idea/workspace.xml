@@ -2,8 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bf3d23a-0cad-41e1-adb7-71a19e70a2c9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.dodg_e/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dodg_e/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dodg_e/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dodg_e/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dodg_e/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dodg_e/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CafeBazaar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CafeBazaar/CafeBazaarIAB.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CafeBazaar/CafeBazaarIAB/AbstractManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CafeBazaar/CafeBazaarIAB/AbstractManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CafeBazaar/CafeBazaarIAB/ActionExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CafeBazaar/CafeBazaarIAB/ActionExtensions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CafeBazaar/CafeBazaarIAB/BazaarIAB.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CafeBazaar/CafeBazaarIAB/BazaarIAB.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CafeBazaar/CafeBazaarIAB/BazaarIABEventManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CafeBazaar/CafeBazaarIAB/BazaarIABEventManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CafeBazaar/CafeBazaarIAB/BazaarPurchase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CafeBazaar/CafeBazaarIAB/BazaarPurchase.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CafeBazaar/CafeBazaarIAB/BazaarSkuInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CafeBazaar/CafeBazaarIAB/BazaarSkuInfo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CafeBazaar/CafeBazaarIAB/Demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CafeBazaar/CafeBazaarIAB/Demo/BazaarIABEventListener.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CafeBazaar/CafeBazaarIAB/Demo/BazaarIABEventListener.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CafeBazaar/CafeBazaarIAB/Demo/IABTestScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CafeBazaar/CafeBazaarIAB/Demo/IABTestScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CafeBazaar/CafeBazaarIAB/Demo/IABTestUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CafeBazaar/CafeBazaarIAB/Demo/IABTestUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CafeBazaar/CafeBazaarIAB/SimpleJSON.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CafeBazaar/CafeBazaarIAB/SimpleJSON.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/Examples/GameAnalyticsPlayMakerDemo.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/BazaarIAB.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/BazaarIAB.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.code.gson.gson-2.8.5.jar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.code.gson.gson-2.8.5.jar.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.squareup.okhttp3.logging-interceptor-3.12.1.jar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.squareup.okhttp3.logging-interceptor-3.12.1.jar.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.squareup.okhttp3.okhttp-3.12.1.jar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.squareup.okhttp3.okhttp-3.12.1.jar.meta" afterDir="false" />
@@ -11,30 +37,27 @@
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.squareup.retrofit2.converter-gson-2.5.0.jar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.squareup.retrofit2.converter-gson-2.5.0.jar.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.squareup.retrofit2.retrofit-2.5.0.jar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.squareup.retrofit2.retrofit-2.5.0.jar.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/ir.tapsell.sdk.tapsell-sdk-unity-4.3.0.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/ir.tapsell.sdk.tapsell-sdk-unity-4.3.0.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tapsell/Editor/TapsellDependencies.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tapsell/Editor/TapsellDependencies.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>first</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/GamePlayManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/IABHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/AdHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/IABHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/ViewManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CafeBazaar/CafeBazaarIAB/BazaarIAB.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/TutorialManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/GamePlayManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -55,43 +78,48 @@
     </ignored-facets>
   </component>
   <component name="ProjectId" id="1VvPf0oyxYZ5DU7p01BAYZ3kz7L" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TWShift.4" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.CSharpInteractiveConfiguration" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -108,6 +136,7 @@
       <workItem from="1577263429021" duration="1908000" />
       <workItem from="1577270391596" duration="1216000" />
       <workItem from="1578130759349" duration="6179000" />
+      <workItem from="1578238327680" duration="1726000" />
     </task>
     <servers />
   </component>
@@ -121,14 +150,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

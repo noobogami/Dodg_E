@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Qolenj\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Qolenj\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_dodg_e.-169185980.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Qolenj\Desktop\Projects\dodg_e" t="IncludeRecursive">
+    <e p="C:\Users\Qolenj G\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Qolenj G\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_dodg_e.328430426.00" t="ExcludeRecursive" />
+    <e p="E:\Qolenj Projects\dodg_e" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="AudioManager.cs" t="Include" />
-        <e p="CafeBazaar" t="Include">
-          <e p="CafeBazaarIAB" t="Include">
-            <e p="AbstractManager.cs" t="Include" />
-            <e p="ActionExtensions.cs" t="Include" />
-            <e p="BazaarIAB.cs" t="Include" />
-            <e p="BazaarIABEventManager.cs" t="Include" />
-            <e p="BazaarPurchase.cs" t="Include" />
-            <e p="BazaarSkuInfo.cs" t="Include" />
-            <e p="Demo" t="Include">
-              <e p="BazaarIABEventListener.cs" t="Include" />
-              <e p="IABTestUI.cs" t="Include" />
-            </e>
-            <e p="SimpleJSON.cs" t="Include" />
+        <e p="CafeBazaarIAB" t="Include">
+          <e p="AbstractManager.cs" t="Include" />
+          <e p="ActionExtensions.cs" t="Include" />
+          <e p="BazaarIAB.cs" t="Include" />
+          <e p="BazaarIABEventManager.cs" t="Include" />
+          <e p="BazaarPurchase.cs" t="Include" />
+          <e p="BazaarSkuInfo.cs" t="Include" />
+          <e p="Demo" t="Include">
+            <e p="BazaarIABEventListener.cs" t="Include" />
+            <e p="IABTestUI.cs" t="Include" />
           </e>
+          <e p="SimpleJSON.cs" t="Include" />
         </e>
         <e p="GameAnalytics" t="Include">
           <e p="Editor" t="Include">

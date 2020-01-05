@@ -237,6 +237,8 @@ public class GameManager : MonoBehaviour
         reviveRequested = true;
         if (purchased)
         {
+            ViewManager.instance.HideRevivePanel();
+            CancelInvoke(nameof(ShowLostPanel));
             Revive();
             return;
         }
