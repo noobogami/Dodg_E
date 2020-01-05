@@ -2,55 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bf3d23a-0cad-41e1-adb7-71a19e70a2c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.dodg_e/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.dodg_e/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dodg_e/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dodg_e/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dodg_e/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dodg_e/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dodg_e/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.dodg_e/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dodg_e/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_AssetPostprocessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_AssetPostprocessor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_SettingsInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_SettingsInspector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Android.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Android.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Android/gameanalytics.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Android/gameanalytics.aar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Android/gameanalytics.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Android/gameanalytics.aar.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Android/unity_gameanalytics.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Android/unity_gameanalytics.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/GameAnalytics.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/GameAnalytics.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/GameAnalytics.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/GameAnalytics.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Linux/sqlite3.so.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Linux/sqlite3.so.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Prefabs/GameAnalytics.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Prefabs/GameAnalytics.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/SamsungTV/GameAnalytics.SamsungTV.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/SamsungTV/GameAnalytics.SamsungTV.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Enums.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Enums.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GAValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GAValidator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/GameAnalytics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/GameAnalytics.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/GameAnalytics.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/GameAnalytics.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Setup/Settings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Setup/Settings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_AndroidWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_AndroidWrapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_MonoWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_MonoWrapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_TizenWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_TizenWrapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_WebGLWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_WebGLWrapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_Wrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_Wrapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_iOSWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_iOSWrapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_tvOSWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_tvOSWrapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Tizen/libGameAnalytics.a" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Tizen/libGameAnalytics.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WebGL/GameAnalytics.jspre" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WebGL/GameAnalytics.jspre" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WebGL/GameAnalyticsUnity.jslib" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WebGL/GameAnalyticsUnity.jslib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Windows/x64/sqlite3.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Windows/x64/sqlite3.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalytics.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalytics.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalyticsUnity.m" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalyticsUnity.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/libGameAnalytics.a" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/libGameAnalytics.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS/GameAnalyticsTVOS.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS/GameAnalyticsTVOS.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS/GameAnalyticsTVOS.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS/GameAnalyticsTVOS.h.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS/GameAnalyticsTVOSUnity.m" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS/GameAnalyticsTVOSUnity.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS/GameAnalyticsTVOSUnity.m.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS/GameAnalyticsTVOSUnity.m.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS/libGameAnalyticsTVOS.a" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS/libGameAnalyticsTVOS.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS/libGameAnalyticsTVOS.a.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS/libGameAnalyticsTVOS.a.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IABHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IABHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager.DotSettings.user.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/AdHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/AdHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/GamePlayManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GamePlayManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.code.gson.gson-2.8.5.jar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.code.gson.gson-2.8.5.jar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.squareup.okhttp3.logging-interceptor-3.12.1.jar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.squareup.okhttp3.logging-interceptor-3.12.1.jar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.squareup.okhttp3.okhttp-3.12.1.jar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.squareup.okhttp3.okhttp-3.12.1.jar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.squareup.okio.okio-1.15.0.jar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.squareup.okio.okio-1.15.0.jar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.squareup.retrofit2.converter-gson-2.5.0.jar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.squareup.retrofit2.converter-gson-2.5.0.jar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.squareup.retrofit2.retrofit-2.5.0.jar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.squareup.retrofit2.retrofit-2.5.0.jar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/ir.tapsell.sdk.tapsell-sdk-unity-4.3.0.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/ir.tapsell.sdk.tapsell-sdk-unity-4.3.0.aar.meta" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,6 +32,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/AdHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/ViewManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CafeBazaar/CafeBazaarIAB/BazaarIAB.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/TutorialManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -146,7 +107,7 @@
       <workItem from="1576996709157" duration="2342000" />
       <workItem from="1577263429021" duration="1908000" />
       <workItem from="1577270391596" duration="1216000" />
-      <workItem from="1578130759349" duration="4615000" />
+      <workItem from="1578130759349" duration="6179000" />
     </task>
     <servers />
   </component>
